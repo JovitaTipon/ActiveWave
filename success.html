@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You | Active Gear</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .success-page {
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 40px;
+      background-color: #e8f4f3;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #1377b2;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ee6927;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background-color: #d85c1f;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-page">
+    <h1>Thank You for Your Purchase!</h1>
+    <p>Your order has been placed successfully. A confirmation email will be sent to you shortly.</p>
+    <a href="mark-shipped.php" class="btn">📦 View Order Status</a>
+  </div>
+
+  <script>
+    fetch("mark-success.php")
+      .then(() => console.log("Order updated to accepted and dispatch created."));
+  </script>
+  
+</body>
+</html>
+
+  

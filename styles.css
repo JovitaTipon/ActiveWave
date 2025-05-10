@@ -1,0 +1,247 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f4f3;
+  color: #333;
+  line-height: 1.6;
+}
+main {
+  padding-top: 40px;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c4a6e; /* Darker blue */
+  color: white;
+  padding: 10px 20px;
+}
+.navbar h1 {
+  font-size: 1.5em;
+  color: white;
+}
+.nav-right {
+  display: flex;
+  gap: 15px;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Buttons */
+.btn-primary {
+  background-color: #ee6927;
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #d85c1f;
+}
+.btn-cart {
+  background-color: #ee6927;
+  color: white;
+}
+.btn-cart:hover {
+  background-color: #d85c1f;
+}
+
+.btn-secondary {
+  background-color: #1377b2;
+  color: white;
+}
+.btn-secondary:hover {
+  background-color: #52cae8;
+  color: #000;
+  margin-right: 10px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #e8f4f3;
+}
+.welcome-card {
+  background: white;
+  padding: 30px;
+  max-width: 600px;
+  border-radius: 8px;
+  border-left: 8px solid #1377b2;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.welcome-card h2 {
+  margin-bottom: 15px;
+  font-size: 2em;
+  color: #1377b2;
+}
+.welcome-card p {
+  font-size: 1.1em;
+  color: #444;
+}
+
+/* Product Section */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  gap: 30px;
+  padding: 40px 20px;
+}
+.product {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  border-top: 4px solid #1377b2;
+}
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.product:hover {
+  transform: translateY(-5px);
+}
+.product h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+.product p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Cart Items Section */
+#cart-items {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Checkout Button */
+#checkout {
+  margin: 20px;
+  padding: 12px 24px;
+  background-color: #ee6927;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  display: inline-block;
+}
+#checkout:hover {
+  background-color: #d85c1f;
+}
+
+/* Cart Page Layout */
+.cart-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.cart-page h2 {
+  font-size: 1.8em;
+  color: #1377b2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Cart Items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cart-items .cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f7fafa;
+  border-radius: 6px;
+  border-left: 4px solid #52cae8;
+}
+.cart-item input[type="number"] {
+  width: 60px;
+  padding: 6px;
+  font-size: 1em;
+}
+.cart-item button {
+  background-color: #ee6927;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cart-item button:hover {
+  background-color: #d85c1f;
+}
+
+
+
+/* Cart Actions */
+.cart-actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .products-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product {
+    width: 90%;
+  }
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+
+
+  
+
+  
+  
