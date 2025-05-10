@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// ✅ Replaces/updates a single order entry in orders.log
+//Replaces/updates a single order entry in orders.log
 function updateOrderLog($updatedOrder) {
     $logFile = 'orders.log';
     $orderId = $updatedOrder['order_id'];
@@ -29,7 +29,7 @@ function updateOrderLog($updatedOrder) {
     file_put_contents($logFile, implode(PHP_EOL, $newLines) . PHP_EOL);
 }
 
-// ✅ Update session and log
+//Update session and log
 if (isset($_SESSION['order'])) {
     // Step 1: Mark as accepted after payment
     $_SESSION['order']['status'] = 'accepted';
