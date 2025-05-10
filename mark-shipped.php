@@ -48,7 +48,7 @@ if (isset($_SESSION['order'])) {
     updateOrderLog($log);
 
     //Send data to Zapier webhook
-    $zapierWebhookUrl = 'https://hooks.zapier.com/hooks/catch/22879779/2ne8dee/';
+    $zapierWebhookUrl = 'zapier url placeholder';
     file_get_contents($zapierWebhookUrl, false, stream_context_create([
         'http' => [
             'method' => 'POST',
