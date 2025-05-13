@@ -5,36 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Your Cart - Active Wave</title>
   <link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/x-icon" href="/images/activewavelogo.png">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
+
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-left">
-      <h1>Active Wave</h1>
-    </div>
-    <div class="nav-right">
-        <a href="orders.php" class="btn btn-secondary">📦 Orders</a>
-      <a href="cart.html" class="btn btn-cart">🛒 Cart</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Active Wave</a>
+      <div class="ms-auto">
+        <a href="orders.php" class="btn btn-outline-secondary me-2">📦 Orders</a>
+        <a href="cart.html" class="btn btn-outline-primary">🛒 Cart</a>
+      </div>
     </div>
   </nav>
 
-  <!-- Cart Section -->
-  <main class="cart-page">
-    <h2>Your Shopping Cart</h2>
-    <section id="cart-items" class="cart-items">
-      <!-- Cart items will be injected here by JS -->
-    </section>
+  <!-- Main Cart Section -->
+  <div class="container py-5">
+    <h1 class="mb-5">Your Shopping Cart</h1>
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Dynamic Cart Items Rendered Here -->
+        <div class="card mb-4">
+          <div class="card-body" id="cart-items">
+            <!-- JS will inject items here using Bootstrap structure -->
+          </div>
+        </div>
 
-    <div class="cart-actions">
-        <a href="index.html" class="btn btn-secondary">← Continue Shopping</a>
-        <button id="checkout" class="btn btn-primary">Proceed to Checkout</button>
+        <!-- Continue Shopping Button -->
+        <div class="text-start mb-4">
+          <a href="index.html" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left me-2"></i>Continue Shopping
+          </a>
+        </div>
       </div>
-      
 
+      <!-- Cart Summary Sidebar -->
+      <div class="col-lg-4">
+        <div class="card cart-summary">
+          <div class="card-body">
+            <h5 class="card-title mb-4">Order Summary</h5>
+            <div class="d-flex justify-content-between mb-3">
+              <span>Subtotal</span>
+              <span id="subtotal">$0.00</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span>Shipping</span>
+              <span id="shipping">$0.00</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span>Tax</span>
+              <span id="tax">$0.00</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between mb-4">
+              <strong>Total</strong>
+              <strong id="total">$0.00</strong>
+            </div>
+            <button id="checkout" class="btn btn-primary w-100">Proceed to Checkout</button>
+          </div>
+        </div>
+
+        <!-- Promo Code -->
+        <div class="card mt-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Thank You For Shopping at Active Wave!</h5>
+            <div class="input-group mb-3">
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS File -->
   <script src="script.js"></script>
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-

@@ -5,22 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Active Wave | Sports Store</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/x-icon" href="C:\xampp\htdocs\ActiveWaveClone\ActiveWave\images\activewavelogo.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="nav-left">
-      <h1>Active Wave</h1>
+    <div class="nav-left" >
+      <img src="/images/activewavelogo.png" alt="" style="width: 100px;height: 100px;">
     </div>
-    <div class="nav-right">
-        <a href="orders.php" class="btn btn-secondary">📦 Orders</a>
-      <a href="cart.html" class="btn btn-cart">🛒 Cart</a>
+    
+</a>
+      <div class="nav-right">
+  <a href="orders.php" class="btn btn-secondary">
+    <i class=></i> 📦 Orders
+  </a>
+  <a href="cart.html" class="btn btn-cart">
+    <i class=></i> 🛒 Cart
+  </a>
+</div>
+
     </div>
   </nav>
 
   <!-- Welcome Section -->
   <section class="welcome-section">
+    
     <div class="welcome-card">
+      
       <h2>Welcome to Active Wave</h2>
       <p>
         Your go-to store for affordable and quality sports equipment. Whether you're a beginner or a pro, we’ve got the gear to keep you active and motivated.
@@ -30,10 +46,25 @@
 
   <!-- Products -->
   <main>
+    <section style="text-align: center; padding: 40px 20px 10px;">
+  <h2 style="
+    font-size: 2.5rem;
+    color: #1377b2;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  ">
+    Our Products
+  </h2>
+  <hr style="width: 60px; border: 2px solid #1377b2; margin: 0 auto;">
+</section>
+
     <section class="products-container">
+      
       <!-- Row 1 -->
       <div class="product">
-        <img src="images/basketball.jpg" alt="Basketball" />
+        <img src="images/basketball.png" alt="Basketball" />
         <h3>Basketball</h3>
         <p>$20</p>
         <button class="btn btn-primary add-to-cart"
@@ -42,7 +73,7 @@
           data-product-price="20">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="images/soccerball.jpg" alt="Soccer Ball" />
+        <img src="images/soccerball.png" alt="Soccer Ball" />
         <h3>Soccer Ball</h3>
         <p>$15</p>
         <button class="btn btn-primary add-to-cart"
@@ -51,7 +82,7 @@
           data-product-price="15">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="images/yoga-mat.jpg" alt="Yoga Mat" />
+        <img src="images/yogamat.png" alt="Yoga Mat" />
         <h3>Yoga Mat</h3>
         <p>$18</p>
         <button class="btn btn-primary add-to-cart"
@@ -62,7 +93,7 @@
 
       <!-- Row 2 -->
       <div class="product">
-        <img src="images/jump-rope.jpg" alt="Jump Rope" />
+        <img src="images/jumprope.png" alt="Jump Rope" />
         <h3>Jump Rope</h3>
         <p>$8</p>
         <button class="btn btn-primary add-to-cart"
@@ -71,7 +102,7 @@
           data-product-price="8">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="images/dumbbells.jpg" alt="Dumbbells" />
+        <img src="images/dumbell.png" alt="Dumbbells" />
         <h3>Dumbbells (Pair)</h3>
         <p>$35</p>
         <button class="btn btn-primary add-to-cart"
@@ -80,7 +111,7 @@
           data-product-price="35">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="images/tennis-racket.jpg" alt="Tennis Racket" />
+        <img src="images/racket.png" alt="Tennis Racket" />
         <h3>Tennis Racket</h3>
         <p>$42</p>
         <button class="btn btn-primary add-to-cart"
@@ -91,7 +122,7 @@
 
       <!-- Row 3 -->
       <div class="product">
-        <img src="images/swim-goggles.jpg" alt="Swim Goggles" />
+        <img src="images/swimgoggles.png" alt="Swim Goggles" />
         <h3>Swim Goggles</h3>
         <p>$10</p>
         <button class="btn btn-primary add-to-cart"
@@ -100,7 +131,7 @@
           data-product-price="10">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="images/kettlebell.jpg" alt="Kettlebell" />
+        <img src="images/kettle.png" alt="Kettlebell" />
         <h3>Kettlebell (12kg)</h3>
         <p>$30</p>
         <button class="btn btn-primary add-to-cart"
@@ -109,7 +140,7 @@
           data-product-price="30">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="images/boxing-gloves.jpg" alt="Boxing Gloves" />
+        <img src="images/boxgloves.png" alt="Boxing Gloves" />
         <h3>Boxing Gloves</h3>
         <p>$28</p>
         <button class="btn btn-primary add-to-cart"
@@ -119,6 +150,30 @@
       </div>
     </section>
   </main>
+
+  <footer style="background-color: #1377b2; color: white; padding: 40px 20px 20px; text-align: center;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <h3 style="margin-bottom: 10px;">Active Wave</h3>
+    <p style="font-size: 0.95em;">Your go-to store for quality sports equipment at great prices.</p>
+
+    <div style="margin: 20px 0;">
+      <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Home</a>
+      |
+      <a href="cart.html" style="color: white; margin: 0 10px; text-decoration: none;">Cart</a>
+      |
+      <a href="orders.php" style="color: white; margin: 0 10px; text-decoration: none;">Orders</a>
+    </div>
+
+    <div style="margin: 20px 0;">
+      <a href="#" style="color: white; margin: 0 10px;"><i class="bi bi-facebook"></i></a>
+      <a href="#" style="color: white; margin: 0 10px;"><i class="bi bi-twitter"></i></a>
+      <a href="#" style="color: white; margin: 0 10px;"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <p style="font-size: 0.85em; margin-top: 30px;">&copy; <?= date('Y') ?> Active Wave. All rights reserved.</p>
+  </div>
+</footer>
+
 
   <script src="script.js"></script>
 </body>

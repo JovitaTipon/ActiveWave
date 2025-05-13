@@ -7,25 +7,32 @@
 
 /* Base Styling */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #e8f4f3;
-  color: #333;
-  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font: weight 1px;
+  font-style: normal;
+  color: #3C3C3C;
+  
 }
 main {
-  padding-top: 40px;
+ 
 }
+
 
 
 /* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  /* Changed to align items correctly */
   align-items: center;
-  background-color: #0c4a6e; /* Darker blue */
+  background-color: transparent;
   color: white;
   padding: 10px 20px;
+  position: absolute;
+  width: 100%;
 }
+
+
 .navbar h1 {
   font-size: 1.5em;
   color: white;
@@ -53,18 +60,19 @@ main {
 
 /* Buttons */
 .btn-primary {
-  background-color: #ee6927;
+  background-color: #007BFF;
   color: white;
 }
 .btn-primary:hover {
   background-color: #d85c1f;
 }
 .btn-cart {
-  background-color: #ee6927;
+  background-color: transparent;
   color: white;
+  border: 1px solid #1377b2;
 }
 .btn-cart:hover {
-  background-color: #d85c1f;
+  background-color: #1377b2;
 }
 
 .btn-secondary {
@@ -77,32 +85,124 @@ main {
   margin-right: 10px;
 }
 
+/* Button with SVG Icon */
+.Btn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid #1377b2;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.svgIcon {
+  width: 16px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Btn::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.Btn:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
+
 /* Welcome Section */
 .welcome-section {
   display: flex;
   justify-content: center;
-  padding: 40px 20px;
-  background-color: #e8f4f3;
+  padding: 150px 100px;
+  background-image: url("/images/landingimage.avif");
+  background-position: center;
 }
 .welcome-card {
-  background: white;
+   background: rgba( 255, 255, 255, 0.2 );
   padding: 30px;
   max-width: 600px;
-  border-radius: 8px;
-  border-left: 8px solid #1377b2;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+ border-radius: 10px;
+ 
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   text-align: center;
+  
+
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+
+
 }
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.btn-back {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #FF7F00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #FF5714;
+}
+
 .welcome-card h2 {
   margin-bottom: 15px;
   font-size: 2em;
   color: #1377b2;
+  font-size: 39px;
 }
 .welcome-card p {
   font-size: 1.1em;
-  color: #444;
+  color:  #000000;
+  font-weight: bold;
 }
+.welcome-card img {
 
+margin: 0%;
+padding: 0%;
+
+}
 /* Product Section */
 .products-container {
   display: flex;
@@ -151,7 +251,7 @@ main {
 
 /* Checkout Button */
 #checkout {
-  margin: 20px;
+  
   padding: 12px 24px;
   background-color: #ee6927;
   color: white;
